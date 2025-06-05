@@ -1,0 +1,143 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #440010;
+}
+
+
+/* INICIO NAV BAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    font-family: "Alfa Slab One", serif;
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+ul {
+    list-style: none; /* tira ponto da frente */
+    display: flex; /* organiza para ficarem deitados */
+    gap: 70px; /* espaçamento */
+}
+
+ul li a {
+    color: white;
+    text-decoration: none; /* Tira underline */
+    transition: color 0.3s;
+    font-weight: bold; /* Espeçura */
+    font-size: 2.3rem; /* tamanho */
+}
+
+ul li a:hover {
+    color: #f63e41;
+}
+
+/* Botão hambúrguer */
+    .menu-toggle {
+    display: none; /* para esconder quando está em desktop */
+    flex-direction: column; /* organiza em tres linhas */
+    cursor: pointer;
+    width: 28px; /* Largura */
+    height: 22px; /* Altura */
+    justify-content: space-between; /* Distribui os elementos filhos de modo que fiquem igualmente espaçados verticalmente dentro da altura do botão. */
+}
+
+.menu-toggle span {
+    background-color: white; /* deixa as linhas brancas */
+    height: 4px; /* Altura das linhas */
+    border-radius: 2px; /* arredonda as bordas das linhas */
+} 
+
+/* Responsivo Tablets*/
+@media (max-width: 1500px) {
+    .logo {
+        font-size: 2rem; /* ligeiramente maior que em mobile */
+    }
+
+    ul {
+        gap: 20px; /* mais espaço entre os itens */
+    }
+
+    ul li a {
+        font-size: 1.8rem; /* um pouco menor do que o padrão */
+    }
+
+    nav {
+        padding: 15px 40px; /* mais espaçamento em telas maiores */
+    }
+}
+
+
+/* Responsivo para celulares */
+@media (max-width: 1045px) {
+    .logo {
+        font-size: 2rem;
+    }    
+    ul {
+        flex-direction: column;
+        background-color: #3a000e;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        display: none;
+        gap: 10px;
+        padding: 10px 10px 10px;
+        border-radius: 0 0 8px 8px;
+    }
+
+    ul li a {
+    font-size: 1.3rem;  /* Diminui a fonte dos links para 1.3rem  */
+    }
+
+    ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostra o botão hambúrguer  */
+    }
+}
+/* FIM NAV BAR */
+
+/* Imagem */
+.imagemInicial {
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemInicial img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.imagemInicial img:hover {
+    transform: scale(1.02); /* efeito leve ao passar o mouse */
+}
+
+
+/* Historia */
+.historia h1{
+    font-family: "Alfa Slab One", serif;
+    font-size: 300;
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+}
+/* 
+#f63e41
+#fef9f8 
+#fdedec
+#f4ccce*/
