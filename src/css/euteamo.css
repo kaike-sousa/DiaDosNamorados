@@ -1,0 +1,111 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #3a000e;
+}
+
+.imagemInicial img {
+    max-width: 80%;
+    display: block;
+    margin: 100px auto;
+    transition: transform 0.3s ease;
+}
+
+.imagemInicial img:hover {
+    transform: scale(1.02); /* efeito leve ao passar o mouse */
+}
+
+.titulo h1{
+    font-family: "Alfa Slab One", serif;
+    margin-top: 200px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 5rem;
+}
+
+.razoes h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 4rem;
+}
+
+.razoes h3{
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 100px;
+}
+
+.imagens-razoes {
+    display: flex;
+    justify-content: center;
+    gap: 100px; 
+}
+
+.imagens-razoes img {
+    width: 400px; 
+    height: 400px;
+    border-radius: 50%; /* imagem redonda */
+    object-fit: cover;  /* mantém o aspecto da imagem sem distorcer */
+    display: block;
+}
+
+#sem-espaço{
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1500px) {
+    .imagemInicial img {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .titulo h1{
+    margin-top: 80px;
+    font-weight: 200;
+    font-size: 3rem;
+    }
+
+    .imagens-razoes {
+    gap: 10px; 
+    }
+
+    .imagens-razoes img {
+        width: 300px; 
+        height: 300px;
+    }
+
+    #sem-espaço{
+    margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 711px) {
+    .titulo h1{
+        margin-top: 40px;
+        font-weight: 100;
+        font-size: 1.7rem;
+    }
+
+    .razoes h1{
+        font-size: 2rem;
+    }
+
+    .razoes h3{
+    font-size: 1.5rem;
+    margin-bottom: 80px;
+    }
+
+    .imagens-razoes img {
+        width: 130px; 
+        height: 130px;
+    }
+
+    #sem-espaço{
+    margin-bottom: 40px;
+    }
+}
