@@ -63,7 +63,6 @@ ul li a:hover {
 
 
 /* Imagem */
-
 .imagemInicial img {
     max-width: 80%;
     display: block;
@@ -76,6 +75,15 @@ ul li a:hover {
 }
 /* Fim imagem */
 
+/* Sobre */
+.texto{
+    font-size: 300;
+    margin: 25px 100px 120px;
+    text-align: justify;
+    color: #ffffff;
+    font-size: 40px;
+}
+/* Fim do sobre */
 
 /* Historia */
 .historia h1{
@@ -90,7 +98,7 @@ ul li a:hover {
 
 /* Inicio footer */
 .footer-declaracao {
-    margin-top: 100px;
+    margin-top: 4rem;
     text-align: center;
     padding: 20px;
     background-color: #3a000e; 
@@ -129,6 +137,7 @@ ul li a:hover {
     }
 
     .footer-declaracao {
+        margin-top: 3rem;
         padding: 15px;
         font-size: 20px;
     }
@@ -164,7 +173,14 @@ ul li a:hover {
         display: flex; /* Mostra o botão hambúrguer  */
     }
 
+    .texto{
+    font-size: 300;
+    margin: 25px 40px 80px;
+    font-size: 20px;
+    }
+
     .footer-declaracao {
+        margin-top: 2rem;
         padding: 10px;
         font-size: 12px;
     }
