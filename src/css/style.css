@@ -43,7 +43,7 @@ ul li a:hover {
 }
 
 /* Botão hambúrguer */
-    .menu-toggle {
+.menu-toggle {
     display: none; /* para esconder quando está em desktop */
     flex-direction: column; /* organiza em tres linhas */
     cursor: pointer;
@@ -57,6 +57,58 @@ ul li a:hover {
     height: 4px; /* Altura das linhas */
     border-radius: 2px; /* arredonda as bordas das linhas */
 } 
+
+/* FIM NAV BAR */
+
+
+
+/* Imagem */
+
+.imagemInicial img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.imagemInicial img:hover {
+    transform: scale(1.02); /* efeito leve ao passar o mouse */
+}
+/* Fim imagem */
+
+
+/* Historia */
+.historia h1{
+    font-family: "Alfa Slab One", serif;
+    font-size: 300;
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+}
+/* FIM historia */
+
+/* Inicio footer */
+.footer-declaracao {
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    background-color: #3a000e; 
+    color: #ffffff; 
+    font-size: 1rem;
+}
+
+.footer-declaracao a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-declaracao a:hover {
+    color: #c2185b;
+}
+/* Fim do footer */
+
 
 /* Responsivo Tablets*/
 @media (max-width: 1500px) {
@@ -75,8 +127,12 @@ ul li a:hover {
     nav {
         padding: 15px 40px; /* mais espaçamento em telas maiores */
     }
-}
 
+    .footer-declaracao {
+        padding: 15px;
+        font-size: 20px;
+    }
+}
 
 /* Responsivo para celulares */
 @media (max-width: 1045px) {
@@ -107,34 +163,9 @@ ul li a:hover {
     .menu-toggle {
         display: flex; /* Mostra o botão hambúrguer  */
     }
+
+    .footer-declaracao {
+        padding: 10px;
+        font-size: 12px;
+    }
 }
-/* FIM NAV BAR */
-
-/* Imagem */
-
-.imagemInicial img {
-    max-width: 80%;
-    display: block;
-    margin: 0 auto;
-    transition: transform 0.3s ease;
-}
-
-.imagemInicial img:hover {
-    transform: scale(1.02); /* efeito leve ao passar o mouse */
-}
-
-
-/* Historia */
-.historia h1{
-    font-family: "Alfa Slab One", serif;
-    font-size: 300;
-    margin-top: 1.5rem;
-    text-align: center;
-    color: #ffffff;
-    font-size: 3rem;
-}
-/* 
-#f63e41
-#fef9f8 
-#fdedec
-#f4ccce*/
