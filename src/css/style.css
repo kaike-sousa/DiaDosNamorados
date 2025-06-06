@@ -4,18 +4,24 @@
 
 body{
     background-color: #440010;
+    padding-top: 110px;
 }
 
 
 /* INICIO NAV BAR */
 
 nav {
+    background-color:#3a000e;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
     color: white;
-    position: relative;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; /* Ocupa toda a largura */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    padding: 1rem; /* Pode ajustar o espaçamento interno */
 }
 
 .logo {
