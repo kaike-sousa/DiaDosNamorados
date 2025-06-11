@@ -24,6 +24,10 @@ DiaDosNamorados/
 * **JavaScript**
 * **Bootstrap**
 
+## Link do pages 
+
+https://kaike-sousa.github.io/DiaDosNamorados/
+
 ### ✨ Mensagem
 
 Esse site foi desenvolvido para uma pessoa muito especial na minha vida, sou muito grato por tudo que ela já fez por mim e esse site é uma forma de demonstrar isso. Feliz dia dos Namorados!
